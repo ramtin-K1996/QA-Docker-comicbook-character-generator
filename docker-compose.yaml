@@ -1,0 +1,44 @@
+version: "3.8"
+services:
+  service_1:
+    image: super-gen-front:v2
+    build: ./service_1
+    container_name: service1
+    networks:
+    - supes-net
+  service_2:
+    image: super-gen-powers:v1
+    build: ./service_2
+    container_name: service2
+    networks:
+     - supes-net
+  service_3:
+    image: super-gen-publisher:v1
+    build: ./service_3
+    container_name: service3
+    networks:
+     - supes-net
+  service_4:
+    image: super-gen-character:v1
+    build: ./service_4
+    container_name: service4
+    networks:
+     - supes-net
+  nginx: 
+    image: nginx:latest
+    container_name: nginx
+    networks:
+     - supes-net
+    volumes:
+     - type: bind
+       source: ./nginx.conf
+       target: /etc/nginx/nginx.conf
+    ports:
+     - target: 80
+       published: 80
+       protocol: tcp 
+    depends_on:
+     - service_1
+
+networks:
+  supes-net:

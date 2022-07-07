@@ -6,24 +6,32 @@ services:
     container_name: service1
     networks:
     - supes-net
+    deploy:
+     replicas: 3
   service_2:
     image: super-gen-powers:v1
     build: ./service_2
     container_name: service2
     networks:
      - supes-net
+    deploy:
+      replicas: 3
   service_3:
     image: super-gen-publisher:v1
     build: ./service_3
     container_name: service3
     networks:
      - supes-net
+    deploy:
+     replicas: 3
   service_4:
     image: super-gen-character:v1
     build: ./service_4
     container_name: service4
     networks:
      - supes-net
+    deploy:
+     replicas: 3
   nginx: 
     image: nginx:latest
     container_name: nginx

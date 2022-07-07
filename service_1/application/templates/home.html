@@ -8,15 +8,89 @@
         <br>
         <br>
         <br>
+        {% if superhero == 'HULK' %}
+            <img src="https://static.wixstatic.com/media/1ce4ae_143c01a8f8c54891986b2c520edb781f~mv2.jpg/v1/fill/w_651,h_465,al_c,q_85,usm_0.66_1.00_0.01/1ce4ae_143c01a8f8c54891986b2c520edb781f~mv2.jpg"
+            alt="alternatetext"
+            align="right"
+            style="position: fixed; right:-200; width:1050px;height:625px; top:100;"          
+            >
+
+        {% elif superhero == 'SUPERMAN' %}
+            <img src="https://www.pikpng.com/pngl/b/133-1331123_superman-alex-ross-poster-clipart.png"
+            alt="alternatetext"
+            align="right"
+            style="position: fixed; left:250; width:300px;height:475px; top: 150;"   
+        >
+
+        {% elif superhero == 'green lantern' %}
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/90/Green_Lantern_%28Hal_Jordan%29.png"
+        alt="alternatetext"
+        align="right"
+        style="position: fixed; left:200; width:250px;height:300px;"   
+        >
+
+        {% elif superhero == 'Spider-man' %}
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cbf84343-a8e7-43dd-93c9-de1278dca06c/dcnrxfe-8c35d459-dd5e-40ee-9f8a-798a4075889a.png/v1/fill/w_400,h_343,strp/spiderman_mcfarlane_png_by_digitalwideresource_dcnrxfe-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQzIiwicGF0aCI6IlwvZlwvY2JmODQzNDMtYThlNy00M2RkLTkzYzktZGUxMjc4ZGNhMDZjXC9kY25yeGZlLThjMzVkNDU5LWRkNWUtNDBlZS05ZjhhLTc5OGE0MDc1ODg5YS5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.5_YFbxIVJAu_WaJ_whGc5RgFZ79e8X7y8GiEQOflMlI"
+        alt="alternatetext"
+        align="right"
+        style="position: fixed; right:0; width:300px;height:350px;"   
+        >
+
+        {% elif superhero == 'mr fantastic' %}
+        <img src="https://gtavrl.ru/public/6994396-681x305.png"
+        alt="alternatetext"
+        align="right"
+        style="position: fixed; right:150; width:400px;height:550px; bottom: -40px;"   
+        >     
+
+        {% elif superhero == 'IRONMAN' %}
+        <img src="https://1.bp.blogspot.com/-Z82xyqFuy04/UODJuWvxgPI/AAAAAAAAJhg/M7cn3oxZ01M/s1600/ironman.gif"
+        alt="alternatetext"
+        align="right"
+        style="position: fixed; right:100; width:330px;height:400px;"   
+        >  
+        {% elif superhero == 'Martian Manhunter' %}
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Martian_Manhunter_Alex_Ross.png"
+        alt="alternatetext"
+        align="right"
+        style="position: fixed; left:260; width:350px;height:475px; top: 150;"   
+        >
+        
+
+        {% elif superhero == 'BATMAN' %}
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4de49bb9-31f0-41f7-8248-aeececffbbdc/d8x6w9w-044cf762-d254-4627-92b1-1a0b691479b5.png/v1/fill/w_1024,h_1327,strp/batman___alex_ross_render_by_yukizm_d8x6w9w-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMyNyIsInBhdGgiOiJcL2ZcLzRkZTQ5YmI5LTMxZjAtNDFmNy04MjQ4LWFlZWNlY2ZmYmJkY1wvZDh4Nnc5dy0wNDRjZjc2Mi1kMjU0LTQ2MjctOTJiMS0xYTBiNjkxNDc5YjUucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ab3EwAIhYRnZZXw56H-7csXE-fiyu5nPfv4T3Jemrr0"
+        alt="alternatetext"
+        align="right"
+        style="position: fixed; left:260; width:350px;height:475px; top: 150;" 
+
+        {% endif %}
+        <br>
+        <br>
+        <br>
+        <center style="position: fixed; left:600;"> <b>Power: </b> {{ power }} </center>
+        <br>
+        <br>
+        <center style="position: fixed; left:600;"> <b>publisher: </b> {{ publisher }} </center>
+        <br>
+        <br>
+        <center style="position: fixed; left:600;"> <b>superhero: </b> {{ superhero }} </center>
+        <br> 
         <br>
         <br>
         <br>
         <br>
-        <center> <b>Power: </b> {{ power }} </center>
         <br>
-        <center> <b>publisher: </b> {{ publisher }} </center>
+        <br> 
         <br>
-        <center> <b>superhero: </b> {{ superhero }} </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        {% if publisher == 'DC' %}
+            <center> <h1 style="color:rgb(0, 0, 0);position: fixed; left:650; " >DC</h1></center>
+        {% else %}
+            <center><h2 style="color:red; position: fixed; left:625; ">MARVEL</h2></center>
+        {% endif %}
 
 
         

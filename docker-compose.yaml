@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   service_1:
-    image: super-gen-front:v2
+    image: super-gen-front:v3
     build: ./service_1
     container_name: service1
     networks:

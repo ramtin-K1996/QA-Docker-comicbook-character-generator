@@ -50,3 +50,4 @@ services:
 
 networks:
   supes-net:
+   driver: overlay 

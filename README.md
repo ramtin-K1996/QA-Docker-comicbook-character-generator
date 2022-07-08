@@ -66,7 +66,27 @@ The logic of the application is very simple, every time the user refreshes the p
 
 ![image](https://user-images.githubusercontent.com/104978129/178031196-aa390bbb-810d-49fa-b245-81a8bde7e904.png)
 
+<br>
+<br>
+<b> risk assessment </b>
 
+![image](https://user-images.githubusercontent.com/104978129/178034297-9e04fc97-18c0-48cb-b172-0f5695f0844b.png)
+
+<br>
+<br>
+<br>
+<b> unit testing</b>
+<br>
+each service was tested with coverage. since each test is located within the service i wrote a script that automate testing of each service. <br>
+
+![image](https://user-images.githubusercontent.com/104978129/178036116-44a9718d-3729-4853-8d9d-94965f79aa93.png)
+<br>
+<br>
+<img src="https://github.com/ramtin-K1996/QA-Docker-comicbook-character-generator/blob/main/screenshots/Screenshot%20(243).png" width="500"/> <img src="https://github.com/ramtin-K1996/QA-Docker-comicbook-character-generator/blob/main/screenshots/Screenshot%20(242).png" width="500"/> 
+<br>
+<img src="https://github.com/ramtin-K1996/QA-Docker-comicbook-character-generator/blob/main/screenshots/Screenshot%20(244).png" width="500"/> <img src="https://github.com/ramtin-K1996/QA-Docker-comicbook-character-generator/blob/main/screenshots/Screenshot%20(245).png" width="500"/> 
+<br>
+<br>
 <b> analysis </b>
 
 In terms of improvements the project was more intended for display of codependency with the implementation tools rather than the python application. Nonetheless I would have liked to improve upon the simplicity of the applications logic. Currently there is only eight possible outcomes I would have liked to ideally expand on that,  Some of the code implementation I would have changed or tidied up. Ultimately time constraints were the deciding factor. 

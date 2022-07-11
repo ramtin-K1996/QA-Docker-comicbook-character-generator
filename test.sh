@@ -9,3 +9,5 @@ for dir in ${dirs[@]}; do
  cd .. 
 
 done
+
+
